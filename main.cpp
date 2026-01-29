@@ -123,9 +123,70 @@ while(true){
     mutableOPCODELIST = mutableOPCODELIST.substr(whiteSpaceIndex + 1);
     loopTableIndex++;
 }
+std::cout << loopTableIndex << std::endl;
+
+//set code values to each opcode
+for(int i = 0; i <= loopTableIndex; i++){
+    switch(i){
+        case 0:
+            opcodesTable[i].code = 0;
+            break;
+        case 1:
+            opcodesTable[i].code = 1;
+            break;
+        case 2:
+            opcodesTable[i].code = 2;
+            break;
+        case 3:
+            opcodesTable[i].code = 3;
+            break;
+        case 4:
+            opcodesTable[i].code = 4;
+            break;
+        case 5:
+            opcodesTable[i].code = 5;
+            break;
+        case 6:
+            opcodesTable[i].code = 6;
+            break;
+        case 7:
+            opcodesTable[i].code = 7;
+            break;
+        case 8:
+            opcodesTable[i].code = 8;
+            break;
+        case 9:
+            opcodesTable[i].code = 9;
+            break;
+        case 10:
+            opcodesTable[i].code = 10;
+            break;
+        case 11:
+            opcodesTable[i].code = 11;
+            break;
+        case 12:
+            opcodesTable[i].code = 12;
+            break;
+        case 13:
+            opcodesTable[i].code = 13;
+            break;
+        case 14:
+            opcodesTable[i].code = 14;
+            break;
+        case 15:
+            opcodesTable[i].code = 15;
+            break;
+        case 16:
+            opcodesTable[i].code = 16;
+            break;
+    }
+}
+
 
 for(int i = 0; i < 17; i++){
     std::cout << opcodesTable[i].name << std::endl;
+    std::cout << opcodesTable[i].code << std::endl;
+    std::cout << std::endl;
 }
 
 // check command-line arguments
